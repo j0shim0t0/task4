@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript">
+		alert('test');
+		function nightModeOn() {
+			document.getElementById("nightMode").setAttribute('onclick', 'nightModeOff()');
+			document.getElementById("textNightMode").innerHTML = 'Day mod';
+			document.getElementById("logo").setAttribute('src', 'img/logoNight.png');
+			document.getElementById("imgNightMode").setAttribute('src', 'img/nightModeOn.png');
+			document.body.style.background = '#012345';
+			let text = document.getElementsByClassName("textHeader");
+			for(let item of text){
+				item.style.color = '#99A7B5';
+			}
+			document.getElementById("imgMessage").setAttribute('src', 'img/messageNight.png');
+			document.getElementById("imgNotice").setAttribute('src', 'img/noticeNight.png');
+			document.getElementById("userName").style.color = '#FCFCFC';
+			document.getElementById("main").style.background = '#011C37';
+			document.getElementById("textFilter").style.color = '#FCFCFC';
+			document.getElementById("selectFilter").style.background = 'url(img/arrowSelectNight.png) 96% 50% no-repeat';
+			let elems = document.getElementsByClassName("elem");
+			for(let item of elems){
+				item.style.background = '#012345';
+			}
+			let elemInfoTitle = document.getElementsByClassName("elemInfoTitle");
+			for(let item of elemInfoTitle){
+				item.style.color = '#FCFCFC';
+			}
+			let elemInfoDescription = document.getElementsByClassName("elemInfoDescription");
+			for(let item of elemInfoDescription){
+				item.style.color = '#99A7B5';
+			}
+		}
+		function nightModeOff() {
+			document.getElementById("nightMode").setAttribute('onclick', 'nightModeOn()');
+			document.getElementById("textNightMode").innerHTML = 'Night Mode';
+			document.getElementById("logo").setAttribute('src', 'img/logo.png');
+			document.getElementById("imgNightMode").setAttribute('src', 'img/nightMode.png');
+			document.body.style.background = '#FCFCFC';
+			let text = document.getElementsByClassName("textHeader");
+			for(let item of text){
+				item.style.color = '#677B8F';
+			}
+			document.getElementById("imgMessage").setAttribute('src', 'img/message.png');
+			document.getElementById("imgNotice").setAttribute('src', 'img/notice.png');
+			document.getElementById("userName").style.color = '#012345';
+			document.getElementById("main").style.background = '#F3F4F7';
+			document.getElementById("textFilter").style.color = '#012345';
+			document.getElementById("selectFilter").style.background = 'url(img/arrowSelect.png) 96% 50% no-repeat';
+			let elems = document.getElementsByClassName("elem");
+			for(let item of elems){
+				item.style.background = '#FCFCFC';
+			}
+			let elemInfoTitle = document.getElementsByClassName("elemInfoTitle");
+			for(let item of elemInfoTitle){
+				item.style.color = '#012345';
+			}
+			let elemInfoDescription = document.getElementsByClassName("elemInfoDescription");
+			for(let item of elemInfoDescription){
+				item.style.color = '#677B8F';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="leftSideHeader">
+			<img class="logo" id="logo" src="img/logo.png">
+			<div class="textHeader">World's first affordable airsharing</div>
+		</div>
+		<div class="rightSideHeader">
+			<div class="nightMode" id="nightMode" onclick="nightModeOn()">
+				<img class="imgNightMode" id="imgNightMode" src="img/nightMode.png">
+				<div class="textHeader textNightMode" id="textNightMode">Night Mode</div>
+			</div>
+			<div class="buttonsHeader">
+				<img class="imgMessage" id="imgMessage" src="img/message.png">
+				<img class="imgNotice" id="imgNotice" src="img/notice.png">
+			</div>
+			<div class="userInfo">
+				<div class="userName" id="userName">Bessie Cooper</div>
+				<img class="avatar" src="img/user.png">
+			</div>
+		</div>
+	</div>
+	<div class="main" id="main">
+		<div class="headerMain">
+			<div class="filter">
+				<div class="textFilter" id="textFilter">Rent</div>
+				<select class="selectFilter" id="selectFilter">
+					<option>whatever</option>
+					<option>whatever1</option>
+				</select>
+			</div>
+			<div class="addNew">
+				<div class="textAddNew" id="textAddNew">Add new</div>
+				<img class="imgAddNew" src="img/addNew.png">
+			</div>
+		</div>
+		<div class="contentMain">
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+			<a href="elem.html">
+				<div class="elem">
+					<img class="elemImg" src="img/elem1.jpg">
+					<div class="elemInfo">
+						<div class="elemInfoTitle">XR-74 «Cooper»</div>
+						<div class="elemInfoDescription">Brief description of the project,<br> in a few lines.</div>
+						<div class="elemInfoPrice">1 278 $/h</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>

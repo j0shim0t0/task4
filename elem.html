@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="elem.css">
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event)
+		{
+		    window.onresize = function() {
+		        //console.log(`change size`);
+		        let arrImg = document.getElementsByClassName("imgBlock");
+		        let width = arrImg[0].offsetWidth;
+		        let widthFloat = arrImg[0].getBoundingClientRect().width;
+		        let heightFloat = 96 * widthFloat/162;
+		        let arrHight = document.getElementsByClassName("imgBlock");
+		        for(let item of arrHight){
+					item.style.height = `${heightFloat}px`;
+				}
+		        //console.log(`width image = ${heightFloat} - ${widthFloat}`);
+		    };
+		});
+
+		function swapSpec(id, block){
+			//console.log(`Press ${id}`);
+			let arrButtons = document.getElementsByClassName("elInfoMenu");
+			for(let item of arrButtons){
+				item.classList.remove('elInfoMenuCurrent');
+			}
+			block.classList.add('elInfoMenuCurrent');
+			let arrSpec = document.getElementsByClassName("elemSpec");
+			for(let item of arrSpec){
+				item.style.display = "none";
+			}
+			let specCurent = document.getElementById(id);
+			specCurent.style.display = "block";
+
+			let arrImg = document.getElementsByClassName("imgBlock");
+		    let width = arrImg[0].offsetWidth;
+		    let widthFloat = arrImg[0].getBoundingClientRect().width;
+		    let heightFloat = 96 * widthFloat/162;
+		    let arrHight = document.getElementsByClassName("imgBlock");
+		    for(let item of arrHight){
+				item.style.height = `${heightFloat}px`;
+			}
+			//console.log(`Array ${arrButtons[0]}`);
+		}
+
+		function nightModeOn() {
+			document.getElementById("nightMode").setAttribute('onclick', 'nightModeOff()');
+			document.getElementById("textNightMode").innerHTML = 'Day mod';
+			document.getElementById("logo").setAttribute('src', 'img/logoNight.png');
+			document.getElementById("imgNightMode").setAttribute('src', 'img/nightModeOn.png');
+			document.body.style.background = '#012345';
+			let text = document.getElementsByClassName("textHeader");
+			for(let item of text){
+				item.style.color = '#99A7B5';
+			}
+			document.getElementById("imgMessage").setAttribute('src', 'img/messageNight.png');
+			document.getElementById("imgNotice").setAttribute('src', 'img/noticeNight.png');
+			document.getElementById("userName").style.color = '#FCFCFC';
+			document.getElementById("elemInfoTitle").style.color = '#FCFCFC';
+			let typeInf = document.getElementsByClassName("elInfoMenu");
+			for(let item of typeInf){
+				item.style.color = '#99A7B5';
+			}
+			let textInfo = document.getElementsByClassName("textInfo");
+			for(let item of textInfo){
+				item.style.color = '#99A7B5';
+			}
+			let titleInfo = document.getElementsByClassName("titleInfo");
+			for(let item of titleInfo){
+				item.style.color = '#FCFCFC';
+			}
+			let titleInfoSpec = document.getElementsByClassName("titleInfoSpec");
+			for(let item of titleInfoSpec){
+				item.style.color = '#FCFCFC';
+			}
+			let textInfoSpec = document.getElementsByClassName("textInfoSpec");
+			for(let item of textInfoSpec){
+				item.style.color = '#99A7B5';
+			}
+			document.getElementById("imgInfoSpec1").setAttribute('src', 'img/imgSpec1Night.png');
+			document.getElementById("imgInfoSpec2").setAttribute('src', 'img/imgSpec2Night.png');
+			document.getElementById("priceSpace").style.background = '#011C37';
+			document.getElementById("textPrice").style.color = '#FCFCFC';
+			let titleBlock = document.getElementsByClassName("titleBlock");
+			for(let item of titleBlock){
+				item.style.color = '#FCFCFC';
+			}
+			let textBlock = document.getElementsByClassName("textBlock");
+			for(let item of textBlock){
+				item.style.color = '#99A7B5';
+			}
+			document.getElementById("listInfo").style.color = '#FCFCFC';
+			let elList = document.getElementsByClassName("elList");
+			for(let item of elList){
+				item.style.color = '#99A7B5';
+			}
+		}
+		function nightModeOff() {
+			document.getElementById("nightMode").setAttribute('onclick', 'nightModeOn()');
+			document.getElementById("textNightMode").innerHTML = 'Night Mode';
+			document.getElementById("logo").setAttribute('src', 'img/logo.png');
+			document.getElementById("imgNightMode").setAttribute('src', 'img/nightMode.png');
+			document.body.style.background = '#FCFCFC';
+			let text = document.getElementsByClassName("textHeader");
+			for(let item of text){
+				item.style.color = '#677B8F';
+			}
+			document.getElementById("imgMessage").setAttribute('src', 'img/message.png');
+			document.getElementById("imgNotice").setAttribute('src', 'img/notice.png');
+			document.getElementById("userName").style.color = '#012345';
+
+			document.getElementById("elemInfoTitle").style.color = '#012345';
+			let typeInf = document.getElementsByClassName("elInfoMenu");
+			for(let item of typeInf){
+				item.style.color = '#677B8F';
+			}
+			let textInfo = document.getElementsByClassName("textInfo");
+			for(let item of textInfo){
+				item.style.color = '#677B8F';
+			}
+			let titleInfo = document.getElementsByClassName("titleInfo");
+			for(let item of titleInfo){
+				item.style.color = '#012345';
+			}
+			let titleInfoSpec = document.getElementsByClassName("titleInfoSpec");
+			for(let item of titleInfoSpec){
+				item.style.color = '#012345';
+			}
+			let textInfoSpec = document.getElementsByClassName("textInfoSpec");
+			for(let item of textInfoSpec){
+				item.style.color = '#677B8F';
+			}
+			document.getElementById("imgInfoSpec1").setAttribute('src', 'img/imgSpec1.png');
+			document.getElementById("imgInfoSpec2").setAttribute('src', 'img/imgSpec2.png');
+			document.getElementById("priceSpace").style.background = '#F3F4F7';
+			document.getElementById("textPrice").style.color = '#012345';
+			let titleBlock = document.getElementsByClassName("titleBlock");
+			for(let item of titleBlock){
+				item.style.color = '#012345';
+			}
+			let textBlock = document.getElementsByClassName("textBlock");
+			for(let item of textBlock){
+				item.style.color = '#677B8F';
+			}
+			document.getElementById("listInfo").style.color = '#012345';
+			let elList = document.getElementsByClassName("elList");
+			for(let item of elList){
+				item.style.color = '#677B8F';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="leftSideHeader">
+			<img class="logo" id="logo" src="img/logo.png">
+			<div class="textHeader">World's first affordable airsharing</div>
+		</div>
+		<div class="rightSideHeader">
+			<div class="nightMode" id="nightMode" onclick="nightModeOn()">
+				<img class="imgNightMode" id="imgNightMode" src="img/nightMode.png">
+				<div class="textHeader textNightMode" id="textNightMode">Night Mode</div>
+			</div>
+			<div class="buttonsHeader">
+				<img class="imgMessage" id="imgMessage" src="img/message.png">
+				<img class="imgNotice" id="imgNotice" src="img/notice.png">
+			</div>
+			<div class="userInfo">
+				<div class="userName" id="userName">Bessie Cooper</div>
+				<img class="avatar" src="img/user.png">
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<img class="imgInfo" src="img/elem1.jpg">
+		<div class="elemInfo">
+			<div class="elemInfoTitle" id="elemInfoTitle">XR-74 «Cooper»</div>
+			<div class="typeInfo">
+				<div class="elInfoMenu elInfoMenuCurrent" onclick="swapSpec('elemInfo1', this);">Specifications</div>
+				<div class="elInfoMenu elInfoMenuMiddle" onclick="swapSpec('elemInfo2', this);">Team</div>
+				<div class="elInfoMenu" onclick="swapSpec('elemInfo3', this);">Rent terms</div>
+			</div>
+			<div id="elemInfo1" class="elemSpec">
+				<div class="textInfo">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+				<div class="titleInfo">Features:</div>
+				<div class="contentInfoSpecSpace">
+					<div class="elInfoSpecSpace">
+						<img class="imgInfoSpec" id="imgInfoSpec1" src="img/imgSpec1.png">
+						<div class="elInfoSpec">
+							<div class="titleInfoSpec">A challenge for a true champion</div>
+							<div class="textInfoSpec">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
+						</div>
+					</div>
+					<div class="elInfoSpecSpace">
+						<img  class="imgInfoSpec" id="imgInfoSpec2" src="img/imgSpec2.png">
+						<div class="elInfoSpec">
+							<div class="titleInfoSpec">Pilot's sweaty hands</div>
+							<div class="textInfoSpec">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="elemInfo2" class="elemSpec" style="display: none;">
+				<div class="textInfo">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</div>
+				<div class="titleInfo">Features:</div>
+				<div class="blockInfo">
+					<div class="block">
+						<div class="imgBlock"></div>
+						<div class="infoBlock">
+							<div class="titleBlock">Marvin McKinney</div>
+							<div class="textBlock">Pilot assistant</div>
+						</div>
+					</div>
+					<div class="block">
+						<div class="imgBlock"></div>
+						<div class="infoBlock">
+							<div class="titleBlock">Marvin McKinney</div>
+							<div class="textBlock">Pilot assistant</div>
+						</div>
+					</div>
+					<div class="block">
+						<div class="imgBlock"></div>
+						<div class="infoBlock">
+							<div class="titleBlock">Marvin McKinney</div>
+							<div class="textBlock">Pilot assistant</div>
+						</div>
+					</div>
+				</div>
+				<div class="textInfo">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+			</div>
+
+			<div id="elemInfo3" class="elemSpec" style="display: none;">
+				<div class="textInfo">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</div>
+				<div class="textInfo additionllyTextInfo">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+				<div class="listInfo" id="listInfo">Additional conditions:</div>
+				<ul class="allList">
+					<li class="elList">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</li>
+					<li class="elList">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</li>
+					<li class="elList">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</li>
+				</ul>
+			</div>
+			<div class="priceSpace" id="priceSpace">
+				<div class="textPrice" id="textPrice">Rent for <span class="price">164 $/h</span></div>
+				<div class="buttonBuy">Rent now</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

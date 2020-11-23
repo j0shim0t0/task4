@@ -1,0 +1,343 @@
+@media screen and (max-width: 1200px) {
+	.blockInfo{
+		flex-direction: column !important;
+	}
+
+	.block{
+		width: 100% !important;
+		flex-direction: row !important;
+		margin-top: 12px;
+	}
+
+	.infoBlock{
+		margin-left: 16px;
+	}
+
+	.imgBlock{
+		width: 162px !important;
+		height: 96px !important;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.main{
+		flex-direction: column !important;
+	}
+
+	.imgInfo{
+		width: 100% !important;
+		height: 100%;
+	}
+
+	.elemInfo{
+		width: 100% !important;
+		margin: 22px 0px 0px 0px !important;
+	}
+
+	.elemInfoTitle{
+		font-size: 24px !important;
+		line-height: 28.8px !important;
+	}
+
+	.typeInfo{
+		margin-top: 16px !important;
+	}
+
+	.typeInfo div{
+		display: flex;
+		align-items: center;
+
+	}
+
+	.textInfo{
+		margin-top: 16px !important;
+	}
+
+	.additionllyTextInfo{
+		margin-top: 8px !important;
+	}
+
+	.listInfo{
+		margin-top: 16px !important;
+	}
+
+	.elList{
+		margin-bottom: 8px !important;
+	}
+
+	.priceSpace{
+		margin-top: 32px !important;
+		height: 68px !important;
+	}
+
+	.titleInfo{
+		margin: 20px 0px 8px !important;
+	}
+
+	.blockInfo{
+		flex-direction: column !important;
+	}
+
+	.block{
+		width: 100% !important;
+		flex-direction: row !important;
+		margin-top: 12px;
+	}
+
+	.imgBlock{
+		width: 162px !important;
+		height: 96px !important;
+	}
+
+	.infoBlock{
+		margin-left: 16px;
+	}
+
+	.textBlock{
+		margin-top: 4px !important;
+	}
+
+	.imgBlock{
+		width: 132px !important;
+		height: 80px !important;
+	}
+
+	.textPrice{
+		font-size: 16px !important;
+	}
+
+	.buttonBuy{
+		width: 111px !important;
+		height: 44px !important;
+		font-size: 14px;
+	}
+
+	.imgInfoSpec{
+		width: 64px !important;
+		height: 80px !important;
+	}
+
+	.textInfoSpec{
+		margin-top: 4px !important;
+	}
+
+	.titleInfoSpec{
+		margin-top: 4px !important;
+	}
+
+	.elInfoSpecSpace{
+		margin-top: 12px !important;
+	}
+}
+
+
+.main{
+	background: none;
+	border-radius: 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.imgInfo{
+	width: 53.3%;
+	border-radius: 24px;
+}
+
+.elemInfo{
+	width: 41.9%;
+	margin: 56px 0px 0px 4.8%;
+}
+
+.elemInfoTitle{
+	margin-top: 0px;
+	font-size: 40px;
+	line-height: 48px;
+}
+
+.typeInfo{
+	display: flex;
+	flex-direction: row;
+	margin-top: 32px;
+}
+
+.elInfoMenu{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 14px;
+	letter-spacing: 0em;
+	color: #677B8F;
+	cursor: pointer;
+}
+
+.elInfoMenuMiddle{
+	margin: 0px 32px;
+}
+
+.textInfo{
+	color: #677B8F;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0px;
+	margin: 32px 0px 0px;
+}
+
+.titleInfo{
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 21px;
+	letter-spacing: 0em;
+	margin: 32px 0px 16px;
+	color: #012345;
+}
+
+.contentInfoSpecSpace{
+	display: flex;
+	flex-direction: column;
+}
+
+.elInfoSpecSpace{
+	display: flex;
+	flex-direction: row;
+}
+
+.elInfoSpec{
+	display: flex;
+	flex-direction: column;
+	margin-left: 24px;
+}
+
+.titleInfoSpec{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: #012345;
+	margin-top: 12px;
+}
+
+.textInfoSpec{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #677B8F;
+	margin-top: 8px;
+}
+
+.priceSpace{
+	background: #F3F4F7;
+	width: calc(100% - 64px);
+	height: 80px;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 32px;
+	margin-top: 45px;
+}
+
+.textPrice{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 28px;
+	letter-spacing: 0px;
+	color: #012345;
+}
+
+.price{
+	color: #f84ab2;
+}
+
+.buttonBuy{
+	width: 136px;
+	height: 48px;
+	background: #4959FF;
+	color: #FCFCFC;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.blockInfo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.block{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+.imgBlock{
+	width: 100%;
+	background: url(img/block.png) no-repeat 50%;
+	background-size: 100%;
+	border-radius: 12px;
+}
+
+.titleBlock{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 14px;
+	letter-spacing: 0em;
+	color: #012345;
+	margin-top: 16px;
+}
+
+.textBlock{
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 18px;
+	letter-spacing: 0em;
+	color: #677B8F;
+	margin-top: 8px;
+}
+
+.additionllyTextInfo{
+	margin-top: 16px;
+}
+
+.listInfo{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: #012345;
+	margin-top: 24px;
+}
+
+.allList{
+	padding-left: 14px;
+}
+
+.elList{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #677B8F;
+	margin-bottom: 16px;
+	padding-left: 6px;
+}
+
+.imgInfoSpec{
+	width: 80px;
+	height: 96px;
+}
+
+.elInfoSpecSpace{
+	margin-top: 16px; 
+}
+
+.elInfoMenuCurrent{
+	color: #4959FF !important;
+}
